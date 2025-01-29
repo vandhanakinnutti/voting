@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>login</title>
+    <style>
+body{
+  margin: 0;
+  padding:0;
+  font-family:sans-serif;
+  background:#34495e;
+}
+.box{
+top:10px;
+margin-left: 350px;
+
+  width:600px;
+  height:500px;
+box-sizing: border-box;
+box-shadow: 10px 15px 10px #000,-10px -15px 10px #000;
+}
+.box h1{
+  padding:15px;
+  color:#ffffff;
+  font-size: 30px;
+  text-align: center;
+}
+.box input[type="text"],.box input[type="password"]{
+  border:0;
+  background:none;
+  display:block;
+  margin:20px auto;
+  text-align: center;
+  border:2px solid #3498db;
+  padding: 14px 10px;
+  width:200px;
+  outline:none;
+  color:#fff;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+.box input[type="text"]:focus,.box input[type="password"]:focus{
+  width:280px;
+  border-color:#2ecc71;
+
+}
+.box input[type="submit"]{
+  border:0;
+  background:none;
+  display:block;
+  margin:20px auto;
+  text-align: center;
+  border:2px solid #3498db;
+  padding: 14px 10px;
+  width:200px;
+  outline:none;
+  color:#fff;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+.box input[type="submit"]:hover{
+  background: #2ecc71;
+}
+.box p {
+  color:white;
+  font-size: 16px;
+  text-decoration: none;
+text-align: center;
+}
+.box a:hover{
+  color:#fff;
+}
+
+    </style>
+
+  </head>
+  <body>
+
+    <form class="box" action="voting.html" method="post" >
+      <h1> voter Login Form </h1>
+       <input type="text" placeholder="enter username"  name="username" required><br><br>
+            <input type="password" placeholder="enter password" name="password" required><br><br>
+          <input type="submit"value="login"><br><br>
+          <p>If you not register?<a href="register.html">register</a></p>
+</form>
+
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>
+voting
+</title>
+<style>
+p{
+text-align:center;
+padding:30px;
+top:0px;
+margin:10px;
+}
+form{
+text-align:center;
+font-size:24px;
+}
+body{
+background-image:url("https://media.istockphoto.com/photos/indian-voter-hand-with-voting-sign-after-casting-vote-in-election-picture-id1148772178?k=20&m=1148772178&s=612x612&w=0&h=0xT4MDxjCKM8MzTDjgWaVbpTITW3Oci6B3NvwKncAD4=");
+background-repeat:no-repeat,repeat;
+background-size:cover;
+}
+label{
+  color:#ffffff;
+  font-size: 16px;
+
+}
+p{
+  color:#ffffff;
+  font-size: 20px;
+}
+</style>
+<script>
+validateform()
+{
+  var vote = document.getElementsById("vote");
+                if (vote[0].checked == true) {
+  alert("your vote submited successfully");
+}
+else {
+  alert("your vote is not submitted");
+}
+return true;
+}
+
+
+</script>
+</head>
+<body>
+<P>WELCOME TO ONLINE  NATIONAL VOTING 2025 </P>
+<p>you can vote here</p>
+<form   action="logout.html"onsubmit="return form()" >
+<input type="radio" id="vote" value="B" name="vote"/>
+<label>BJP</label><br><br>
+<input type="radio" id="vote" value="T"name="vote"/>
+<label>TDP</label><br><br>
+<input type="radio" id="vote" value="Y"name="vote"/>
+<label>YCP</label><br><br>
+<input type="radio" id="vote" value="R"name="vote"/>
+<label>TRS</label><br><br>
+<input type="radio" id="vote" value="C"name="vote"/>
+<label>CONGRESS</label><br><br>
+<input type="submit" name="submit" value="submit">
+<input type="reset" name="reset" value="refresh" >
+</form>
+</body>
